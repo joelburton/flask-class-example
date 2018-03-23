@@ -1,0 +1,9 @@
+click==6.7
+Flask==0.12.2
+-e git+https://github.com/joelburton/flask-modus@279027c885f79fbd924b95fb95844222f80c9325#egg=Flask_Modus
+Flask-SQLAlchemy==2.3.2
+itsdangerous==0.24
+Jinja2==2.10
+MarkupSafe==1.0
+SQLAlchemy==1.2.5
+Werkzeug==0.14.1

@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <form action="{{ url_for('game_add') }}" method="POST">
+            <div>
+                <input type="text" name="title">
+            <div>
+            <div>
+                <input type="text" name="imageUrl">
+            </div>
+            <div>
+                <textarea name="description"></textarea>
+            </div>
+            <button type="submit">Add</button>
+        </form>
+    </body>
+</html>

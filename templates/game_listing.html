@@ -1,0 +1,15 @@
+<html>
+    <body>
+
+        <h1>Games</h1>
+
+        {% for game in games %}
+        <h2><a href="{{ url_for('game_detail', game_id=game.id) }}">{{ game.title }}</a></h2>
+            <img src="{{ game.imageUrl }}">
+            <p>{{ game.description }}</p>
+        {% endfor %}
+
+        <a href="{{ url_for('game_add_form') }}">Add</a>
+
+    </body>
+</html>

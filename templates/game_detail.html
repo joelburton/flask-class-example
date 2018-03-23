@@ -1,0 +1,9 @@
+<html>
+    <body>
+        <h1>{{ game.title }}</h1>
+        <img src="{{ game.imageUrl }}">
+        <p>{{ game.description }}</p>
+        <a href="{{ url_for('game_del', game_id=game.id) }}?_method=DELETE">Delete</a>
+        <a href="{{ url_for('game_edit_form', game_id=game.id) }}">Edit</a>
+    </body>
+</html>
